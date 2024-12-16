@@ -1,6 +1,7 @@
 {
   "name": "k-line-chart",
   "version": "1.0.0",
+  "description": "一个使用vue3和lightweight-charts的秒k线组件",
   "private": false,
   "type": "module",
   "scripts": {
@@ -12,8 +13,8 @@
     "lint": "eslint . --fix",
     "format": "prettier --write src/"
   },
-  "main": "dist/k-line-chart.cjs.js",
-  "module": "dist/k-line-chart.es.js",
+  "main": "dist/k-line-chart.cjs",
+  "module": "dist/k-line-chart.js",
   "types": "dist/index.d.ts",
   "dependencies": {
     "big.js": "^6.2.2",

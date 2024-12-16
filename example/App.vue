@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import kLineChart from '@/components/kLineChart.vue'
 import { ref } from 'vue'
-import type { SNode } from '..'
+import type { SNode } from '../index.d.ts'
 
 const kLineDataList = ref<SNode[]>([])
 let newData = ref<SNode>()

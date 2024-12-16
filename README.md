@@ -1,39 +1,41 @@
 # k-line-chart
 
-This template should help get you started developing with Vue 3 in Vite.
+一个使用vue3和lightweight-charts的秒k线组件
 
-## Recommended IDE Setup
+## 功能
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+1、支持自定义lightweight-charts全部配置
 
-## Type Support for `.vue` Imports in TS
+2、自适应屏幕分辨率，宽度、高度自适应
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+3、支持价格精度控制
 
-## Customize configuration
+4、过滤插针数据，减少小尖角
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+# 示意图
 
-## Project Setup
+![image](asstes/sline2024.png)
+<video src="asstes/sline2024.mp4" autoplay="true" controls="controls" width="400" height="320">
+</video>
 
-```sh
-pnpm install
+# 使用方式
+
+## 1. 安装
+
+`npm i k-line-chart`
+
+## 2. 引用
+
+```javascript
+import VdepthChart from 'k-line-chart'
+// 全局引用
+Vue.use(VdepthChart)
 ```
 
-### Compile and Hot-Reload for Development
+## 3.调用
 
-```sh
-pnpm dev
-```
+example/App.vue
 
-### Type-Check, Compile and Minify for Production
-
-```sh
-pnpm build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-pnpm lint
+```javascript
+<kLineChart :list="kLineDataList" :newData="newData"></kLineChart>
 ```
