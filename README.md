@@ -27,15 +27,23 @@
 ## 2. 引用
 
 ```javascript
-import VdepthChart from 'k-line-chart'
+import Vue from 'vue'
+import kLineChart from 'k-line-chart'
 // 全局引用
-Vue.use(VdepthChart)
+Vue.use(kLineChart)
+```
+
+```vue
+<!-- 组件引用 -->
+<script setup lang="ts">
+import kLineChart from '@/components/kLineChart.vue'
+</script>
 ```
 
 ## 3.调用
 
-example/App.vue
+示例：example/App.vue
 
-```javascript
-<kLineChart :list="kLineDataList" :newData="newData"></kLineChart>
+```vue
+<kLineChart :list="historyList" :newData="newData"></kLineChart>
 ```
