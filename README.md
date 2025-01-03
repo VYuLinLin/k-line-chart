@@ -1,4 +1,4 @@
-# k-line-chart
+# @real2sport/k-line-chart
 
 一个使用vue3和lightweight-charts的秒k线组件
 
@@ -22,13 +22,13 @@
 
 ## 1. 安装
 
-`npm i k-line-chart`
+`npm i @real2sport/k-line-chart`
 
 ## 2. 引用
 
 ```javascript
 import Vue from 'vue'
-import kLineChart from 'k-line-chart'
+import kLineChart from '@real2sport/k-line-chart'
 // 全局引用
 Vue.use(kLineChart)
 ```

@@ -1,5 +1,5 @@
 {
-  "name": "k-line-chart",
+  "name": "@real2sport/k-line-chart",
   "version": "1.0.0",
   "description": "一个使用vue3和lightweight-charts的秒k线组件",
   "private": false,
